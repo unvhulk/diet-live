@@ -19,11 +19,11 @@ export const Meal = ({ meal }) => {
 							<div className=''>
 								<img
 									src={meal.co_image}
-									alt=''
+									alt={meal.name}
 									style={{ heigh: "100%", width: "100%" }}
 								/>
 							</div>
-							<div className=''>
+							<div style={{ padding: "10px" }}>
 								<div className=''>No. : {i + 1}</div>
 								<div className=''>Name : {meal.name}</div>
 								<div className=''>Calories : {meal.cal}</div>
