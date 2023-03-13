@@ -7,7 +7,7 @@ export const Meal = ({ meal }) => {
 			<div className=''>
 				{meal.diet_details?.map((meal, i) => (
 					<div
-						key={meal.unit_id}
+						key={meal.unit_id + i}
 						style={{
 							backgroundColor: `${
 								meal.consumption_status ? "green" : "yellow"
@@ -52,32 +52,3 @@ export const Meal = ({ meal }) => {
 		</div>
 	);
 };
-// cal: "46.2";
-// carbs_cal: "16.00";
-// carbs_grams: "4";
-// category: "dinner";
-// co_image: "https://d1e9q0asw0l2kk.cloudfront.net/diet_upload/QYQNnfXZPFNaG-1674967192437download.jpg";
-// consumed_cal: 0;
-// consumption_status: false;
-// date_added: "1643458387";
-// description: "<p>Add mixture of tomato, onion, cabbage, spinach and carrot.</p>";
-// details_id: "N/A";
-// fat_cal: "27.00";
-// fat_grams: "3";
-// id: 80;
-// is_missed: 0;
-// is_popular: 0;
-// last_updated: "1675015041044";
-// method: "<p>Add mixture of tomato, onion, cabbage, spinach and carrot.</p>";
-// name: "Bowl of Salad ";
-// protien_cal: "3.20";
-// protien_grams: "0.8";
-// quantity: 1;
-// status: "active";
-// thumbnail: "https://wtfupme-images-1435.s3.ap-south-1.amazonaws.com/diet_upload/QYQNnfXZPFNaG-1674804683623download.jpg";
-// total_fat_cal: 27;
-// total_fat_grams: 3;
-// total_in_cal: 46.2;
-// total_in_grams: 7.8;
-// total_protien_cal: 3.2;
-// total_protien_grams: 0.8;

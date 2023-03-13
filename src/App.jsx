@@ -28,7 +28,6 @@ function App() {
 					},
 				}
 			);
-			console.log(response.data);
 			setDiets(response.data);
 		} catch (err) {
 			console.error(err);
@@ -47,11 +46,11 @@ function App() {
 					<div
 						key={val}
 						onClick={(e) => {
-							setSelectedMeal(diets.data[0].day[`${e.target.innerText}`]);
+							setSelectedMeal(diets.data[0]?.day[`${e.target.innerText}`]);
 						}}
 						style={{
 							border: "1px solid Black",
-							marginLeft: "1rem",
+							padding: "1rem",
 							cursor: "pointer",
 						}}>
 						{val}
