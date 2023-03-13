@@ -16,7 +16,7 @@ export const Meal = ({ meal }) => {
 							margin: "10px",
 						}}>
 						<div style={{ display: "grid", gridTemplateColumns: "1fr 2fr" }}>
-							<div className=''>
+							<div style={{ display: "grid", alignItems: "center" }}>
 								<img
 									src={meal.co_image}
 									alt={meal.name}
