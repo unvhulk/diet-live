@@ -15,8 +15,6 @@ export const Meal = ({ meal }) => {
 							border: "1px solid black",
 							margin: "10px",
 						}}>
-						<div className=''>No. : {i + 1}</div>
-						<div className=''>Name : {meal.name}</div>
 						<div style={{ display: "grid", gridTemplateColumns: "1fr 2fr" }}>
 							<div className=''>
 								<img
@@ -26,6 +24,8 @@ export const Meal = ({ meal }) => {
 								/>
 							</div>
 							<div className=''>
+								<div className=''>No. : {i + 1}</div>
+								<div className=''>Name : {meal.name}</div>
 								<div className=''>Calories : {meal.cal}</div>
 								<div className=''>Carbs Calories : {meal.carbs_cal}</div>
 								<div className=''>Carbs Grams : {meal.carbs_grams}</div>
