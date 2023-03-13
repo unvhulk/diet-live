@@ -40,7 +40,9 @@ function App() {
 
 	return (
 		<div className='App'>
-			<h1>Diet Plan APP</h1>
+			<h1 style={{ display: "flex", justifyContent: "center" }}>
+				Diet Plan APP
+			</h1>
 			<header style={{ display: "flex" }}>
 				{MealsList.map((val) => (
 					<div
@@ -58,8 +60,19 @@ function App() {
 					</div>
 				))}
 			</header>
-			<div className=''>
-				<Meal meal={selectedMeal} />
+			<div>
+				{selectedMeal ? (
+					selectedMeal.diet_details?.length !== 0 ? (
+						<Meal meal={selectedMeal} />
+					) : (
+						<h1 style={{ display: "flex", justifyContent: "center" }}>
+							{" "}
+							The Plan is empty for selected category
+						</h1>
+					)
+				) : (
+					<h1>Select a Meal</h1>
+				)}
 			</div>
 		</div>
 	);

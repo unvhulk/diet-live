@@ -2,8 +2,6 @@ import { Method } from "./Method";
 export const Meal = ({ meal }) => {
 	return (
 		<div>
-			<div className=''>Total calories : {meal.total_calories}</div>
-			<div className=''>Total calories consumed: {meal.consumed}</div>
 			<div className=''>
 				{meal.diet_details?.map((meal, i) => (
 					<div
@@ -53,6 +51,8 @@ export const Meal = ({ meal }) => {
 								</div>
 								<div className=''>Total In Calories : {meal.total_in_cal}</div>
 								<div className=''>Total In Grams : {meal.total_in_grams}</div>
+								<div className=''>Total calories : {meal.total_calories}</div>
+								<div className=''>Total calories consumed: {meal.consumed}</div>
 								<div>
 									<Method method={meal.method} />
 								</div>
