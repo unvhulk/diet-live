@@ -12,6 +12,8 @@ export const Meal = ({ meal }) => {
 							backgroundColor: `${
 								meal.consumption_status ? "green" : "yellow"
 							}`,
+							border: "1px solid black",
+							margin: "10px",
 						}}>
 						<div className=''>No. : {i + 1}</div>
 						<div className=''>Name : {meal.name}</div>

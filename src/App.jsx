@@ -52,6 +52,7 @@ function App() {
 							border: "1px solid Black",
 							padding: "1rem",
 							cursor: "pointer",
+							width: "100%",
 						}}>
 						{val}
 					</div>
